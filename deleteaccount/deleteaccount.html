@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account - GR Cabs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="branding">
+                <img src="newlogoss.png" alt="HealthHub Logo" class="logo">
+                <h1>GR Cabs</h1>
+            </div>
+            <div class="illustration">
+                <img src="delete-user-3148748-2624925.webp" alt="Illustration of Healthcare Workers">
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="form-container">
+                <h2>Delete Your Account</h2>
+                <p>We're sorry to see you go. Please provide the following information to delete your account.</p>
+                <form action="/delete_account" method="post">
+                    <label for="mobile-number">Mobile Number</label>
+                    <input type="text" id="mobile-number" name="mobile-number" required>
+
+                    <label for="reason">Reason for Deleting Account</label>
+                    <textarea id="reason" name="reason" required></textarea>
+
+                   
+
+                    <button type="submit" class="delete-button">Delete Account</button>
+                </form>
+                <a href="/dashboard" class="cancel-link">Cancel</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
